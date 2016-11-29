@@ -14,7 +14,7 @@ angular
 
 	.constant('config', {
 		version: 24354,
-		apiPath: 'http://api.dev.uirouter.com/', // data type String may wrapped on quotes
+		apiPath: 'http://api.dev.uirouter.com/server/', // data type String may wrapped on quotes
 		some1: {"number":1,"array":[1,2,3]},
 		some2: [{"some":true,"else":"false"},{"some":1,"else":"false"}],
 		static: {any: true}
