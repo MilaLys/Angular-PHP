@@ -1,0 +1,16 @@
+{
+  "generator-angular-dft": {
+    "user": "Mila",
+    "appName": "authtutorialapp",
+    "appVersion": "0.0.1",
+    "cssFramework": null,
+    "modules": {
+      "root": "authtutoapp"
+    },
+    "instalation": "complete",
+    "preprocessors": {
+      "css": "sass",
+      "js": null
+    }
+  }
+}

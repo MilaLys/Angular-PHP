@@ -1,0 +1,95 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Authtutorialapp</title>
+    <meta name="description" content="Authtutorialapp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
+    
+    <!-- build:css({.tmp,src}) css/vendor.css -->
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- endbower -->
+
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,src}) css/app.css -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../source/styles/all.css">
+    <!-- endinject -->
+
+    <!-- endbuild -->
+
+  </head>
+
+  <body data-ng-app="authtutoapp">
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="wrap" data-ui-view></div>
+
+  </body>
+
+  <!-- build:js({.tmp,src}) js/vendor.js -->
+
+  <!-- bower:js -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/lodash/lodash.js"></script>
+  <script src="../bower_components/PACE/pace.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../bower_components/moment/moment.js"></script>
+  <script src="../bower_components/restangular/dist/restangular.js"></script>
+  <script src="../bower_components/angular-base64/angular-base64.js"></script>
+  <script src="../bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+  <script src="../bower_components/angular-animate/angular-animate.js"></script>
+  <script src="../bower_components/angular-ui-scroll/dist/ui-scroll.js"></script>
+  <script src="../bower_components/angular-ui-scrollpoint/dist/scrollpoint.js"></script>
+  <script src="../bower_components/angular-ui-event/dist/event.js"></script>
+  <script src="../bower_components/angular-ui-mask/dist/mask.js"></script>
+  <script src="../bower_components/angular-ui-validate/dist/validate.js"></script>
+  <script src="../bower_components/angular-ui-indeterminate/dist/indeterminate.js"></script>
+  <script src="../bower_components/angular-ui-uploader/dist/uploader.js"></script>
+  <script src="../bower_components/angular-ui-utils/index.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <!-- endbower -->
+
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,src}) js/app.js -->
+
+  <!-- inject:js -->
+  <script src="../source/app/states/home/home.module.js"></script>
+  <script src="../source/app/states/home/home.controller.js"></script>
+  <script src="../source/app/states/layout.module.js"></script>
+  <script src="../source/app/states/layout.controller.js"></script>
+  <script src="../source/app/app.js"></script>
+  <script src="../source/app/filters/humanize.filter.js"></script>
+  <script src="../source/app/config.js"></script>
+  <!-- endinject -->
+  
+  <!-- inject:template-cache -->
+  <!-- endinject -->
+
+  <!-- endbuild -->
+
+</html>

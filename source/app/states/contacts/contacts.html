@@ -1,0 +1,76 @@
+<div class="container">
+
+    <!--<div class="jumbotron text-center">
+        <h1>Contacts</h1>
+        <p class="lead">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Yeoman.svg/256px-Yeoman.svg.png" alt="I'm Yeoman"><br>
+            angular-dft always a pleasure scaffolding your application.
+        </p>
+
+        <p>With many thanks to the contributions of Yeoman.</p>
+
+        <p>Also with great gratitude to the project connected the following technologies.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4" data-ng-repeat="item in vm.connections | orderBy:'rank' ">
+            <div class="thumbnail">
+                <img class="pull-right" width="90" data-ng-src="{{ item.logo }}" alt="{{ awesomeThing.title }}">
+                <div class="caption">
+                    <h3><a target="_blank" data-ng-href="{{item.url}}">{{ item.name }}</a></h3>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <h2 class="bg-primary text-center text-uppercase">Login</h2>
+
+    <form name="userForm" data-ng-submit="submitForm()" novalidate>
+
+        <!--NAME-->
+        <div class="form-group" data-ng-class="{'has-error': userForm.username.$invalid && !userForm.username.$pristine}">
+            <label for="userName">Your name:</label>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+                <input type="text"
+                       class="form-control"
+                       id="userName"
+                       name="name"
+                       data-ng-model="user.username"
+                       required
+                />
+            </div>
+            <p data-ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">
+                Your name is required.
+            </p>
+        </div>
+
+        <!--PHONE-->
+        <div class="form-group">
+            <label for="userPassword">Password:</label>
+            <div class="input-group">
+            <span class="input-group-addon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </span>
+            <input type="password" class="form-control" ng-model="user.password" id="userPassword" />
+            </div>
+        </div>
+
+        <!--EMAIL-->
+       <!-- <div class="form-group">
+            <label for="user-email">Your email</label>
+            <div class="input-group">
+        <span class="input-group-addon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+                <input type="email" class="form-control" id="user-email">
+            </div>
+        </div>-->
+        <button type="submit" class="btn btn-primary" data-ng-disabled="userForm.$invalid">Login</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+    </form>
+
+</div>
